@@ -1,0 +1,122 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #87CEEB; /* Измененный цвет фона */
+  color: #343a40;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #343a40;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Books Section Styles */
+.artist-photo,
+.artist-info {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.artist-photo img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.photo-right {
+  margin-left: auto;
+}
+
+.artist-info h1 {
+  font-size: 3.0em;
+  margin-bottom: 10px;
+}
+
+.artist-info p {
+  font-size: 1.5em;
+}
+
+
+.rating {
+    display: inline-flex;
+    margin-top: -10px;
+    flex-direction: row-reverse
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 25px;
+    font-size: 26px;
+    color: yellow;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}

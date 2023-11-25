@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gaming Website">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <title>Kazakh Language</title>
+  <!--stylesheet-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="styles/gamesstyle.css" rel="stylesheet" type="text/css">
+  <link href="styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+  <!--scripts-->
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="scripts/search.js"></script>
+</head>
+
+<body id="page-top">
+
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4682B4;">
+  <img src="images/logo.png" alt="Your Logo"  style="width: 100px;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="info.html" style="font-size: 20px;">Info</a>
+    </li>
+     <li class="nav-item">
+       <a class="nav-link" href="books.html" style="font-size: 20px;">Books</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="GAMES.html" style="font-size: 20px;">Quiz</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#202" style="font-size: 20px;">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--this function to change overflow as the bootsrap cards tends to oveflow in small screen-->
+<script type="text/javascript">
+  setInterval(function scroll(){
+  var width = window.innerWidth;
+  if (width < 1000){
+    document.getElementById("Banner").style.overflowY = 'scroll';
+  }
+  else{
+    document.getElementById("Banner").style.overflowY = 'visible';
+  }
+}, 1000)
+scroll()
+</script>
+
+
+<!-- Game Section using boostrap cards-->
+<section id="games-section">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+
+
+        <div class="col col-lg-3 thumbnail" id="quizgame">
+          <div class="card card-body">
+          <div class="hovereffect">
+            <div class="col-md-12 photo-2" style="background-image: url('images/quiz.jpg');"></div>
+              <a href="#mybox" data-toggle="modal" data-slide-to="1">
+                <div class="overlay">
+                  <h2>Quick Quiz</h2>
+                  <p>Kazakh Language In Modern Life</p>
+                </div>
+              </a>
+          </div>
+          <h1> kazakh language quiz<br> <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> </div></h1>
+          <a href="games/Quiz/index.html" target="_blank" class="highlight-button btn border-danger btn-medium button xs-margin-bottom-five" data-abc="true"><i class="fa fa-play"></i><b>Play</b></a>
+        </div>
+        </div>
+  </div>
+  </div>
+  </section>
+</body>
+</html>
